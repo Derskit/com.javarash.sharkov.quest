@@ -10,14 +10,14 @@ import java.io.IOException;
 @WebServlet("/result")
 public class ResultServlet extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws IOException, ServletException {
         req.getRequestDispatcher("/WEB-INF/jsp/result.jsp").forward(req, resp);
 
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.getSession().invalidate();
         resp.sendRedirect("start");
     }

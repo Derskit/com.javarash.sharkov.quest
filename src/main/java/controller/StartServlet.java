@@ -11,12 +11,12 @@ import java.io.IOException;
 @WebServlet("/start")
 public class StartServlet extends HttpServlet {
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         req.getRequestDispatcher("/WEB-INF/jsp/start.jsp").forward(req, resp);
     }
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+    public void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws IOException {
 
         String name = req.getParameter("username");

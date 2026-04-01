@@ -1,7 +1,8 @@
-package model;
+package service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import model.Scene;
 
 import java.io.InputStream;
 import java.util.HashMap;

@@ -2,7 +2,7 @@ package controller;
 
 import model.GameState;
 import model.Scene;
-import model.SceneService;
+import service.SceneService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

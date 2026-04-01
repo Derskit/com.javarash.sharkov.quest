@@ -1,4 +1,5 @@
-import controller.GameServlet;
+package controller;
+
 import model.GameState;
 import model.Scene;
 import org.junit.jupiter.api.BeforeEach;
